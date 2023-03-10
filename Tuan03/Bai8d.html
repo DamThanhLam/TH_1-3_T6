@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .state-diagram {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.state-node {
+  width: 100px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 50px;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.state-node.active {
+  background-color: #00c8ff;
+  color: #fff;
+}
+
+.state-transition {
+  position: relative;
+  width: 100px;
+  margin: 10px;
+}
+
+.state-transition .arrow {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid black;
+}
+
+.state-transition .transition-label {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div class="state-diagram">
+        <div class="state-node active">State 1</div>
+        <div class="state-node">State 2</div>
+        <div class="state-node">State 3</div>
+        <div class="state-node">State 4</div>
+        <div class="state-transition active">
+          <div class="arrow"></div>
+          <div class="transition-label">Transition 1</div>
+        </div>
+        <div class="state-transition">
+          <div class="arrow"></div>
+          <div class="transition-label">Transition 2</div>
+        </div>
+        <div class="state-transition">
+          <div class="arrow"></div>
+          <div class="transition-label">Transition 3</div>
+        </div>
+      </div>
+      
+</body>
+</html>
