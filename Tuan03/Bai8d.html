@@ -6,74 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .state-diagram {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.state-node {
-  width: 100px;
-  height: 50px;
-  border: 2px solid black;
-  border-radius: 10px;
-  text-align: center;
-  line-height: 50px;
-  margin: 10px;
-  font-weight: bold;
-  font-size: 16px;
-  background-color: #fff;
-}
-
-.state-node.active {
-  background-color: #00c8ff;
-  color: #fff;
-}
-
-.state-transition {
-  position: relative;
-  width: 100px;
-  margin: 10px;
-}
-
-.state-transition .arrow {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid black;
-}
-
-.state-transition .transition-label {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 14px;
-  font-weight: bold;
-}
-
+        .kieu{
+            color: blue;
+            display: inline;
+        }
+        .thuoc-tinh{
+            color:red;
+            display: inline;
+        }
+        div{
+            width: 500px;
+            text-align: center;
+            border-width: 10px;
+            border-color:  #85C226 #F7C200 #4493A0 #DF127B;
+            border-style: solid;
+            border-radius: 0px 30px 70px 20px;
+        }
     </style>
 </head>
 <body>
-    <div class="state-diagram">
-        <div class="state-node active">State 1</div>
-        <div class="state-node">State 2</div>
-        <div class="state-node">State 3</div>
-        <div class="state-node">State 4</div>
-        <div class="state-transition active">
-          <div class="arrow"></div>
-          <div class="transition-label">Transition 1</div>
-        </div>
-        <div class="state-transition">
-          <div class="arrow"></div>
-          <div class="transition-label">Transition 2</div>
-        </div>
-        <div class="state-transition">
-          <div class="arrow"></div>
-          <div class="transition-label">Transition 3</div>
-        </div>
-      </div>
-      
+    <h1>Boder Radius</h1>
+    <b>Syntax:</b> <p class="kieu">border-radius: <p class="thuoc-tinh">(top-left) (roght-rigt) (bottom-right) (left-left)</p></p>
+    <b>Example:</b> <p class="kieu">border-radius: <p class="thuoc-tinh">0px 30px 70px 20px</p></p>
+
+    <p>For displaying round corners Border Radius property is used</p>
+    <p>IE9 and Opera use the same code. Foe Firedox a prefix "-moz-" needs to be added before the code. And for Webkit Browsers "-webkit-" needs to be added before the code.</p>
+
+    <br><p>Box-shadow property for all the browsers.</p>
+
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorum, eos cumque ipsum magnam amet soluta commodi assumenda corrupti vero perferendis odit error nam eveniet labore dolor reprehenderit debitis est quasi iste quod non eaque! Hic natus molestiae quis sit sunt ad perspiciatis voluptas eligendi eius? Alias quaerat nesciunt ullam.
+    </div>
+
 </body>
 </html>
