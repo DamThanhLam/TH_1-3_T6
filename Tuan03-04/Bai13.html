@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            width: 120px;
+            height: 140px;
+            border: 1px solid blue;
+            text-align: center;
+            margin: 5px;
+            perspective: 1000px;
+    
+        }
+        img{
+            object-fit: contain;
+            width: 80px;
+            height: 80px;
+        }
+        p{
+            margin: 0px;
+        }
+
+        .gallery{
+            display: flex;
+           
+        }
+        img:hover{
+            animation: zoom 2s ease-in-out forwards;
+        }
+
+        @keyframes zoom {
+            to {
+                transform: translateZ(400px);
+            }
+        }
+</style>
+</head>
+<body>
+    <div class="gallery">
+            <div class="item">
+                <img src="img/anh-hoa-1.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="item">
+                <img src="img/anh-hoa-2.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="item">
+                <img src="img/anh-hoa-3.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+    </div>
+</body>
+</html>
